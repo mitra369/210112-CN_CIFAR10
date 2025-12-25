@@ -59,16 +59,16 @@ Convolutional Neural Network implemented using `torch.nn.Module`.
 <img width="495" height="227" alt="Screenshot 2025-12-26 025004" src="https://github.com/user-attachments/assets/d0f33cf3-3daf-4800-836b-5c4cd236ea8e" />
 
 
-### Validation Results:
-## Loss vs Epoch
+## Validation Results:
+### Loss vs Epoch
 
 <img width="547" height="417" alt="download" src="https://github.com/user-attachments/assets/85475b7a-1708-4a31-91c5-d7f1cc300c08" />
 
-## Accuracy vs Epoch
+### Accuracy vs Epoch
 
 <img width="556" height="413" alt="download" src="https://github.com/user-attachments/assets/edcd6a2a-0efb-453c-b4c2-a2ecf115fd5a" />
 
-## Observations
+### Observations
 Training loss decreases steadily
 Training accuracy improves consistently
 Validation accuracy stabilizes around 70–73%
@@ -90,7 +90,7 @@ Three misclassified test images were visualized with true and predicted labels.
 
 
 
-## Real-World Smartphone Image Predictions
+### Real-World Smartphone Image Predictions
 
 The trained model was evaluated on custom smartphone images.
 
@@ -103,7 +103,7 @@ For each image:
 <img width="1490" height="1490" alt="download" src="https://github.com/user-attachments/assets/6882d281-f8aa-45b6-a146-7bbcdbd14f4c" />
 
 
-## How to Run (Google Colab)
+### How to Run (Google Colab)
 
 ```bash
 git clone https://github.com/mitra369/210112-CN_CIFAR10.git
