@@ -102,28 +102,23 @@ For each image:
 
 <img width="1490" height="1490" alt="download" src="https://github.com/user-attachments/assets/6882d281-f8aa-45b6-a146-7bbcdbd14f4c" />
 
+### Observations
+Vehicle images are classified with high confidence
+Animal classes occasionally show confusion
+Confidence varies due to domain shift between CIFAR-10 and real-world images
 
 ### How to Run (Google Colab)
 
-```bash
-git clone https://github.com/mitra369/210112-CN_CIFAR10.git
+Open the notebook in Google Colab:
+Click here to open 210112_CN_CIFAR10.ipynb in Colab
 
----
+Select Runtime → Run all
 
-## VERY IMPORTANT CHECKLIST (THIS IS WHY IT FAILED BEFORE)
+All training, evaluation, and visualizations will be executed automatically.
+No manual cloning or file uploads are required.
 
-Make sure **ALL** are true:
-
-1. File name is **README.md** (not `.txt`)
-2. The `#` symbol is in **column 1** (no space before it)
-3. You are viewing it on **GitHub repository page**, not Notepad or Word
-4. You did **not** paste it inside a code block accidentally
-
----
-
-If you want, next I can:
-- Convert your **existing text** automatically into Markdown
-- Check your GitHub repo live and tell you what is wrong
-- Make it look exactly like a published research repo
-
-Just tell me.
+## Author
+### Antu Mitra
+### Student ID: 210112
+### Department of Computer Science and Engineering
+### Jashore University of Science and Technology
