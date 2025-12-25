@@ -26,9 +26,10 @@ This project implements a complete Convolutional Neural Network (CNN) image clas
 
 Real-world smartphone images captured by the author and collected from the internet.
 
-Directory:
+### Project Structure:
 
 ---
+<img width="620" height="332" alt="Screenshot 2025-12-17 130301" src="https://github.com/user-attachments/assets/7eb7085d-e161-4235-a459-ed9a2e2e989d" />
 
 ## Model Architecture
 
@@ -51,19 +52,33 @@ Convolutional Neural Network implemented using `torch.nn.Module`.
 - Model trained on CIFAR-10 training set
 - Training and validation metrics recorded across epochs
 
+
 **Epochs:** 10  
 **Batch Size:** 64  
+## Training Log (Per Epoch)
+<img width="495" height="227" alt="Screenshot 2025-12-26 025004" src="https://github.com/user-attachments/assets/d0f33cf3-3daf-4800-836b-5c4cd236ea8e" />
 
 
-## Evaluation & Results
+### Validation Results:
+## Loss vs Epoch
 
----<img width="547" height="415" alt="download" src="https://github.com/user-attachments/assets/09227334-58da-43c3-8dd1-a03e4012e958" />
-<img width="556" height="413" alt="download" src="https://github.com/user-attachments/assets/c0e3eaab-dae3-45f4-9430-c2bae8178722" />
+<img width="547" height="417" alt="download" src="https://github.com/user-attachments/assets/85475b7a-1708-4a31-91c5-d7f1cc300c08" />
+
+## Accuracy vs Epoch
+
+<img width="556" height="413" alt="download" src="https://github.com/user-attachments/assets/edcd6a2a-0efb-453c-b4c2-a2ecf115fd5a" />
+
+## Observations
+Training loss decreases steadily
+Training accuracy improves consistently
+Validation accuracy stabilizes around 70–73%
+Overfitting begins after later epochs (expected behavior)
 
 ### Confusion Matrix
 
 A confusion matrix was generated on the CIFAR-10 test set to analyze per-class performance.
-<img width="853" height="743" alt="download" src="https://github.com/user-attachments/assets/d635445f-e529-499d-99d1-1d4cceaef4b9" />
+
+<img width="576" height="484" alt="download" src="https://github.com/user-attachments/assets/23821f50-ff87-452f-a93b-3e20eaa08d0f" />
 
 
 ### Visual Error Analysis
@@ -71,8 +86,9 @@ A confusion matrix was generated on the CIFAR-10 test set to analyze per-class p
 Three misclassified test images were visualized with true and predicted labels.
 
 ---
+<img width="717" height="268" alt="download" src="https://github.com/user-attachments/assets/7c213e00-dc4a-47fb-ac15-bf6db6c850c3" />
 
-<img width="717" height="268" alt="download" src="https://github.com/user-attachments/assets/ef21abcc-15ac-4234-9df8-83a09b9b5c1a" />
+
 
 ## Real-World Smartphone Image Predictions
 
@@ -83,7 +99,8 @@ For each image:
 - Confidence score
 
 ---
-<img width="1490" height="1490" alt="download" src="https://github.com/user-attachments/assets/d278b56b-27ed-4f42-aa44-b8444409f4c5" />
+
+<img width="1490" height="1490" alt="download" src="https://github.com/user-attachments/assets/6882d281-f8aa-45b6-a146-7bbcdbd14f4c" />
 
 
 ## How to Run (Google Colab)
