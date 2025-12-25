@@ -54,19 +54,25 @@ Convolutional Neural Network implemented using `torch.nn.Module`.
 **Epochs:** 10  
 **Batch Size:** 64  
 
----
 
 ## Evaluation & Results
+
+---<img width="547" height="415" alt="download" src="https://github.com/user-attachments/assets/09227334-58da-43c3-8dd1-a03e4012e958" />
+<img width="556" height="413" alt="download" src="https://github.com/user-attachments/assets/c0e3eaab-dae3-45f4-9430-c2bae8178722" />
 
 ### Confusion Matrix
 
 A confusion matrix was generated on the CIFAR-10 test set to analyze per-class performance.
+<img width="853" height="743" alt="download" src="https://github.com/user-attachments/assets/d635445f-e529-499d-99d1-1d4cceaef4b9" />
+
 
 ### Visual Error Analysis
 
 Three misclassified test images were visualized with true and predicted labels.
 
 ---
+
+<img width="717" height="268" alt="download" src="https://github.com/user-attachments/assets/ef21abcc-15ac-4234-9df8-83a09b9b5c1a" />
 
 ## Real-World Smartphone Image Predictions
 
@@ -77,6 +83,8 @@ For each image:
 - Confidence score
 
 ---
+<img width="1490" height="1490" alt="download" src="https://github.com/user-attachments/assets/d278b56b-27ed-4f42-aa44-b8444409f4c5" />
+
 
 ## How to Run (Google Colab)
 
