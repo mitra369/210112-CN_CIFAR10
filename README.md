@@ -1,123 +1,104 @@
-Vehicles & Animals Image Classification with CIFAR-10
+# Vehicles & Animals Image Classification with CIFAR-10
 
 This project implements a complete Convolutional Neural Network (CNN) image classification pipeline using PyTorch, trained on the CIFAR-10 dataset and evaluated on both the standard test set and real-world smartphone images.
 
-Dataset
-Standard Dataset
+---
 
-CIFAR-10 (10 classes)
+## Dataset
 
-Classes Used
+### Standard Dataset
 
-airplane
+**CIFAR-10 (10 classes)**
 
-automobile
+### Classes Used
+- airplane
+- automobile
+- bird
+- cat
+- deer
+- dog
+- frog
+- horse
+- ship
+- truck
 
-bird
-
-cat
-
-deer
-
-dog
-
-frog
-
-horse
-
-ship
-
-truck
-
-Custom Dataset
+### Custom Dataset
 
 Real-world smartphone images captured by the author and collected from the internet.
 
 Directory:
 
-dataset/phone image/
+---
 
-Project Structure
-210112-CN_CIFAR10/
-├── dataset/
-│   └── phone image/
-├── model/
-│   └── 210112.pth
-├── 210112-CN_CIFAR10.ipynb
-└── README.md
+## Model Architecture
 
-Model Architecture
+Convolutional Neural Network implemented using `torch.nn.Module`.
 
-Convolutional Neural Network implemented using torch.nn.Module.
+### Key Layers
+- Convolution + ReLU
+- MaxPooling
+- Fully Connected layers
 
-Key Layers
+**Loss Function:** CrossEntropyLoss  
+**Optimizer:** Adam  
 
-Convolution + ReLU
+---
 
-MaxPooling
+## Training
 
-Fully Connected layers
+- Dataset downloaded automatically using `torchvision.datasets`
+- Images preprocessed using `torchvision.transforms`
+- Model trained on CIFAR-10 training set
+- Training and validation metrics recorded across epochs
 
-Loss Function: CrossEntropyLoss
-Optimizer: Adam
+**Epochs:** 10  
+**Batch Size:** 64  
 
-Training
+---
 
-Dataset downloaded automatically using torchvision
+## Evaluation & Results
 
-Images preprocessed using torchvision.transforms
-
-Model trained on CIFAR-10 training set
-
-Training and validation metrics recorded across epochs
-
-Epochs: 10
-Batch Size: 64
-
-Training Results
-
-Final epoch results:
-
-Epoch [10/10]
-Training Loss ≈ 0.25
-Training Accuracy ≈ 91%
-
-Evaluation & Results
-Confusion Matrix
+### Confusion Matrix
 
 A confusion matrix was generated on the CIFAR-10 test set to analyze per-class performance.
 
-Visual Error Analysis
+### Visual Error Analysis
 
 Three misclassified test images were visualized with true and predicted labels.
 
-Real-World Smartphone Image Predictions
+---
+
+## Real-World Smartphone Image Predictions
 
 The trained model was evaluated on custom smartphone images.
 
 For each image:
+- Predicted class
+- Confidence score
 
-Predicted class
+---
 
-Confidence score
+## How to Run (Google Colab)
 
-Key Takeaways
-
-CNN learns CIFAR-10 visual patterns effectively
-
-Stable convergence during training
-
-Domain shift affects real-world image performance
-
-How to Run (Google Colab)
+```bash
 git clone https://github.com/mitra369/210112-CN_CIFAR10.git
 
+---
 
-Open the notebook and select:
+## VERY IMPORTANT CHECKLIST (THIS IS WHY IT FAILED BEFORE)
 
-Runtime → Run all
+Make sure **ALL** are true:
 
-Author
+1. File name is **README.md** (not `.txt`)
+2. The `#` symbol is in **column 1** (no space before it)
+3. You are viewing it on **GitHub repository page**, not Notepad or Word
+4. You did **not** paste it inside a code block accidentally
 
-Antu Mitra
-Department of Computer Science and Engineering
+---
+
+If you want, next I can:
+- Convert your **existing text** automatically into Markdown
+- Check your GitHub repo live and tell you what is wrong
+- Make it look exactly like a published research repo
+
+Just tell me.
